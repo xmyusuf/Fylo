@@ -1,0 +1,96 @@
+// ------------------QUOTE------------------
+
+.quote__wrapper {
+  padding-top: 100px;
+  padding-right: 80px;
+  padding-left: 80px;
+  @include flex-style(center, space-between);
+  background-image: url('../../images/quote.png');
+  background-repeat: no-repeat;
+  background-position: 73px 64px;
+}
+
+.quote__main-wrap {
+  width: 360px;
+  height: 200px;
+  padding-top: 40px;
+  padding-left: 26px;
+  background-color: rgb(32, 42, 60);
+  box-shadow: 5px 5px 8px rgba(56, 56, 56, 0.0991282);
+  border-radius: 3.93258px;
+}
+
+.quote__aphorism {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 24px;
+  width: 309px;
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.5px;
+  color: $color-white;
+}
+
+.quote__mini-wrap {
+  @include flex-style(center, flex-start);
+}
+
+.quote__img {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+.quote__last-wrap {
+  height: 26px;
+  line-height: normal;
+}
+
+.quote__name {
+  display: block;
+  font-family: "Open Sans";
+  font-size: 10px;
+  line-height: 12px;
+  color: $color-white;
+}
+
+.quote__job {
+  font-family: "Open Sans";
+  font-size: 7px;
+  line-height: 10px;
+  color: $color-white;
+}
+
+@include breakpoint-down(1310px) {
+  .quote__wrapper {
+    flex-direction: column;
+    justify-content: center;
+    background-position: calc(50% - 161px) 64px;
+  }
+
+  .quote__main-wrap {
+    margin-bottom: 24px; 
+  }
+}
+
+@include breakpoint-down(440px) {
+  .quote__wrapper {
+    background-size: 20px auto; 
+    background-position: calc(50% - 125px) 87px;
+  }
+
+  .quote__main-wrap {
+    padding-top: 24px;
+    padding-left: 20px;
+    width: 280px;
+    height: 160px;
+  }
+
+  .quote__aphorism {
+    width: 240px;
+    padding-bottom: 17px;
+    font-size: 10px;
+    line-height: 18px;
+  }
+}

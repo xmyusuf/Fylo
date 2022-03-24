@@ -1,0 +1,43 @@
+// ------------------NAVBAR------------------
+.header__list {
+  width: 270px;
+  @include list-unstyled(none);
+  @include flex-style(flex-start, space-between);
+}
+
+.header__link {
+  @include link-unstyled;
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: $color-white;
+
+  &:hover {
+    color: rgb(250, 156, 49);
+  }
+}
+
+//-----Responsive-----
+
+@include breakpoint-down(800px) {
+  .header__list {
+    width: 200px;
+  }
+
+  .header__link { 
+  font-size: 14px;
+  line-height: 15px;
+  }
+}
+
+@include breakpoint-down(400px) {
+  .header__list {
+    width: 160px;
+  }
+
+  .header__link {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}

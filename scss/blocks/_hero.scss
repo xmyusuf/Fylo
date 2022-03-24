@@ -1,0 +1,160 @@
+// ------------------HERO------------------
+
+.hero {
+  padding-top: 75px;
+  // background-color: $color-bg-site;
+}
+
+.hero__wrapper {
+  text-align: center;
+}
+
+.hero__image {
+  width: 720px;
+  height: 534px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero__heading {
+  width: 734px;
+  margin: 0;
+  margin-top: 36px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  color: $color-white;
+}
+
+.hero__text {
+  width: 535px;
+  margin: 0;
+  margin-top: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Open Sans";
+  font-size: 20px;
+  line-height: 30px;
+  color: $color-white;
+}
+
+.hero__btn {
+  padding: 18px 95px;
+  margin-top: 32px;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: $color-white;
+  border: none;
+  background: linear-gradient(152.13deg, #63e1d9 -150.21%, #34a0cd 170.03%);
+  box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.15925);
+  border-radius: 28px;
+
+  &:hover {
+    cursor: pointer;
+    color: rgb(52, 160, 205);
+    background: linear-gradient(152.13deg, #bed8d6 -150.21%, #a0bcc9 170.03%);
+  }
+}
+
+//-----Responsive-----
+
+@include breakpoint-down(800px) {
+  .hero {
+    padding-top: 60px;
+  }
+
+  .hero__image {
+    width: 500px;
+    height: 374px;
+  }
+
+  .hero__heading {
+    width: 514px;
+    font-size: 34px;
+    line-height: 42px;
+  }
+
+  .hero__text {
+    width: 375px;
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+
+@include breakpoint-down(600px) {
+  .hero__image {
+    width: 356px;
+    height: 268px;
+  }
+
+  .hero__heading {
+    width: 368px;
+    font-size: 28px;
+    line-height: 42px;
+  }
+
+  .hero__text {
+    width: 350px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@include breakpoint-down(450px) {
+  .hero {
+    padding-top: 48px;
+  }
+
+  .hero__image {
+    width: 304px;
+    height: 225px;
+  }
+
+  .hero__heading {
+    width: 300px;
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .hero__text {
+    width: 296px;
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .hero__btn {
+    padding: 16px 80px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+@include breakpoint-down(375px) {
+  .hero__image {
+    width: 270px;
+    height: 200px;
+  }
+
+  .hero__heading {
+    width: 270px;
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .hero__text {
+    width: 270px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .hero__btn {
+    padding: 12px 60px;
+    font-size: 12px;
+    line-height: 14px;
+  }
+}

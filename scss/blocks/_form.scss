@@ -1,0 +1,117 @@
+// ------------------FORM------------------
+
+.form {
+  padding-bottom: 85px;
+}
+
+.form__wrapper {
+  margin: 0 auto;
+  width: 863px;
+  height: 275px;
+  position: relative;
+  top: 200px;
+  text-align: center;
+  background-color: rgb(27, 35, 48);
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.254274);
+  border-radius: 9px;
+}
+
+.form__heading {
+  margin: 0;
+  padding-top: 42px;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+  color: $color-white;
+}
+
+.form__text {
+  width: 673px;
+  margin: 0 auto;
+  padding-top: 16px;
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 21px;
+  color: $color-white;
+}
+
+.form__form {
+  display: inline;
+}
+
+.form__input {
+  margin-top: 38px;
+  margin-right: 26px;
+  padding: 17px 208px 15px 38px;
+  font-family: "Open Sans";
+  font-size: 12px;
+  line-height: 14px;
+  color: rgb(192, 192, 192);
+  background-color: $color-white;
+  box-shadow: 2px 3px 6px rgba(7, 4, 59, 0.157043);
+  border-radius: 24px;
+  border: none;
+}
+
+.form__link {
+  padding: 15px 27px;
+  @include link-unstyled;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  background: linear-gradient(152.13deg, #63e1d9 -150.21%, #34a0cd 170.03%);
+  box-shadow: 2px 3px 6px rgba(7, 4, 59, 0.157043);
+  border-radius: 24px;
+  color: $color-white;
+}
+
+@include breakpoint-down(900px) {
+  .form__wrapper {
+    width: 463px;
+    height: 300px;
+  }
+
+  .form__text {
+    width: 400px;
+  }
+
+  .form__input {
+    margin-right: 0;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .form__link {
+    padding-left: 127px;
+    padding-right: 127px;
+  }
+}
+
+@include breakpoint-down(503px) {
+  .form__wrapper {
+    width: 280px;
+    height: 353px;
+    top: 240px;
+  }
+
+  .form__heading {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .form__text {
+    width: 260px;
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .form__input {
+    padding: 19px 80px 15px 29px;
+  }
+
+  .form__link {
+    padding: 16px 60px;
+  }
+}
